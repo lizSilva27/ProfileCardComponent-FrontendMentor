@@ -1,0 +1,102 @@
+@import url(https://fonts.googleapis.com/css?family=Kumbh+Sans:100,200,300,regular,500,600,700,800,900);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --Darkcyan: rgb(25, 162, 174);
+  --Verydark_desaturated_blue: rgb(45, 50, 72);
+  --Darkgrayish_blue: rgb(106, 111, 129);
+  --Darkgray: rgb(150, 150, 150);
+}
+
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+  background-color: var(--Darkcyan);
+  background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 51vw bottom 20vh, left 45vw top 50vh;
+}
+
+.cardContainer {
+  margin: 170px auto 50px;
+  width: 330px;
+  height: 380px;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+}
+
+.cardContainer .bubbles {
+  background: url(images/bg-pattern-card.svg);
+  height: 140px;
+}
+
+.cardContainer .photo {
+  position: absolute;
+  top: 87px;
+  left: 35%;
+  border: 5px solid White;
+  border-radius: 50%;
+  overflow: hidden;
+  height: 96px;
+}
+
+.cardContainer .personal-dataContainer{
+  background-color: White;
+  height: 150px;
+  padding: 75px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.cardContainer .personal-dataContainer .name {
+  font-weight: 700;
+  color: var(--Verydark_desaturated_blue);
+  font-size: 18px;
+}
+
+.cardContainer .personal-dataContainer .age .city {
+  color: var(--Darkgray);
+}
+
+.cardContainer .personal-dataContainer .city {
+  margin-top: 10px;
+  font-size: 0.9em;
+}
+
+.cardContainer .statsContainer {
+  background-color: White;
+  border-top: 1px solid var(--Darkgray);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 90px;
+}
+
+.cardContainer .statsContainer .statistics {
+  text-align: center;
+  font-size: 18px;
+}
+
+.cardContainer .statsContainer .quantity {
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: var(--Verydark_desaturated_blue);
+}
+
+.cardContainer .statsContainer .units {
+  font-size: 0.7em;
+  color: var(--Darkgray);
+  letter-spacing: 1px;
+}
+
+@media screen and (min-width: 1440px) {
+
+  .cardContainer {
+    width: 350px;
+  }
+  
+}
